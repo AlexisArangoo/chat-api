@@ -1,0 +1,464 @@
+
+
+======================ERROR 27/9/2023========================
+{"status":400,"error":"User does not exist","message":"You need register before login"}
+
+
+======================ERROR 27/9/2023========================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+======================ERROR 27/9/2023========================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+======================ERROR 27/9/2023========================
+{"name":"SequelizeDatabaseError","parent":{"length":199,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participant.conversationId».","position":"38","file":"parse_relation.c","line":"3666","routine":"errorMissingColumn","sql":"SELECT \"senderId\", \"conversationId\", \"ConversationId\", \"UserId\" FROM \"Participants\" AS \"Participant\" WHERE \"Participant\".\"ConversationId\" = 3 AND \"Participant\".\"UserId\" IN (35);"},"original":{"length":199,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participant.conversationId».","position":"38","file":"parse_relation.c","line":"3666","routine":"errorMissingColumn","sql":"SELECT \"senderId\", \"conversationId\", \"ConversationId\", \"UserId\" FROM \"Participants\" AS \"Participant\" WHERE \"Participant\".\"ConversationId\" = 3 AND \"Participant\".\"UserId\" IN (35);"},"sql":"SELECT \"senderId\", \"conversationId\", \"ConversationId\", \"UserId\" FROM \"Participants\" AS \"Participant\" WHERE \"Participant\".\"ConversationId\" = 3 AND \"Participant\".\"UserId\" IN (35);","parameters":{}}
+
+{"name":"SequelizeDatabaseError","parent":{"length":146,"name":"error","severity":"ERROR","code":"42703","position":"55","file":"parse_target.c","line":"1066","routine":"checkInsertTargets","sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\",\"conversationId\") VALUES (NULL,NULL,4),(NULL,NULL,4),(NULL,NULL,4),(NULL,NULL,4) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";"},"original":{"length":146,"name":"error","severity":"ERROR","code":"42703","position":"55","file":"parse_target.c","line":"1066","routine":"checkInsertTargets","sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\",\"conversationId\") VALUES (NULL,NULL,4),(NULL,NULL,4),(NULL,NULL,4),(NULL,NULL,4) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";"},"sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\",\"conversationId\") VALUES (NULL,NULL,4),(NULL,NULL,4),(NULL,NULL,4),(NULL,NULL,4) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";","parameters":{}}
+
+======================ERROR 28/9/2023========================
+======================ERROR 28/9/2023========================
+{"name":"SequelizeDatabaseError","parent":{"length":201,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participants.ConversationId».","position":"123","file":"parse_relation.c","line":"3666","routine":"errorMissingColumn","sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,5),(4,5),(5,5),(2,5) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";"},"original":{"length":201,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participants.ConversationId».","position":"123","file":"parse_relation.c","line":"3666","routine":"errorMissingColumn","sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,5),(4,5),(5,5),(2,5) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";"},"sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,5),(4,5),(5,5),(2,5) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";","parameters":{}}
+
+======================ERROR 28/9/2023========================
+{"name":"SequelizeDatabaseError","parent":{"length":201,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participants.ConversationId».","position":"123","file":"parse_relation.c","line":"3666","routine":"errorMissingColumn","sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,6),(4,6),(5,6),(2,6) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";"},"original":{"length":201,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participants.ConversationId».","position":"123","file":"parse_relation.c","line":"3666","routine":"errorMissingColumn","sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,6),(4,6),(5,6),(2,6) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";"},"sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,6),(4,6),(5,6),(2,6) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";","parameters":{}}
+
+======================ERROR 28/9/2023========================
+{"name":"SequelizeDatabaseError","parent":{"length":201,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participants.ConversationId».","position":"123","file":"parse_relation.c","line":"3666","routine":"errorMissingColumn","sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,7),(4,7),(5,7),(2,7) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";"},"original":{"length":201,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participants.ConversationId».","position":"123","file":"parse_relation.c","line":"3666","routine":"errorMissingColumn","sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,7),(4,7),(5,7),(2,7) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";"},"sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,7),(4,7),(5,7),(2,7) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";","parameters":{}}
+
+======================ERROR 28/9/2023========================
+{"name":"SequelizeDatabaseError","parent":{"length":201,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participants.ConversationId».","position":"123","file":"parse_relation.c","line":"3666","routine":"errorMissingColumn","sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,8),(4,8),(5,8),(2,8) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";"},"original":{"length":201,"name":"error","severity":"ERROR","code":"42703","hint":"Probablemente quiera hacer referencia a la columna «Participants.ConversationId».","position":"123","file":"parse_relation.c","line":"3666","routine":"errorMissingColumn","sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,8),(4,8),(5,8),(2,8) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";"},"sql":"INSERT INTO \"Participants\" (\"UserId\",\"ConversationId\") VALUES (1,8),(4,8),(5,8),(2,8) RETURNING \"UserId\",\"ConversationId\",\"conversationId\";","parameters":{}}
+
+======================ERROR 28/9/2023========================
+{"name":"SequelizeQueryError"}
+
+======================ERROR 28/9/2023========================
+{}
+
+======================ERROR 28/9/2023========================
+{}
+
+======================ERROR 29/9/2023========================
+{"status":401,"error":"Email verification needed","message":"Look at your email messages for a verification email"}
+
+======================ERROR 29/9/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-09-16T03:45:12.000Z"}
+
+======================ERROR 29/9/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-09-16T03:45:12.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-09-30T04:56:38.000Z"}
+
+======================ERROR 30/9/2023========================
+======================ERROR 30/9/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-09-30T04:56:38.000Z"}
+
+======================ERROR 30/9/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-09-30T04:56:38.000Z"}
+
+======================ERROR 30/9/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-09-30T04:56:38.000Z"}
+
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+======================ERROR 2/10/2023========================
+======================ERROR 2/10/2023========================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+======================ERROR 2/10/2023========================
+{"status":401,"message":"No authorization header"}
+
+{"status":401,"message":"No authorization header"}
+
+======================ERROR 2/10/2023========================
+======================ERROR 2/10/2023========================
+{"status":401,"message":"No authorization header"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T02:02:59.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T02:02:59.000Z"}
+
+======================ERROR 2/10/2023========================
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T02:02:59.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T02:02:59.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T02:09:53.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T02:09:53.000Z"}
+
+======================ERROR 2/10/2023========================
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T02:09:53.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T04:07:21.000Z"}
+
+======================ERROR 2/10/2023========================
+{}
+
+{}
+
+======================ERROR 2/10/2023========================
+======================ERROR 2/10/2023========================
+{}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T05:11:47.000Z"}
+
+{"expose":true,"statusCode":400,"status":400,"body":"{\r\n    \"userId\": ,\r\n    \"participantId\": 2\r\n}","type":"entity.parse.failed"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T02:09:53.000Z"}
+
+{"name":"SequelizeDatabaseError","parent":{"length":158,"name":"error","severity":"ERROR","code":"22P02","where":"portal sin nombre, parámetro 1 = ''","file":"numutils.c","line":"235","routine":"pg_strtoint32","sql":"INSERT INTO \"Conversations\" (\"id\",\"createdBy\",\"createdAt\") VALUES (DEFAULT,$1,$2) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":["","2023-10-03 13:49:59.317 +00:00"]},"original":{"length":158,"name":"error","severity":"ERROR","code":"22P02","where":"portal sin nombre, parámetro 1 = ''","file":"numutils.c","line":"235","routine":"pg_strtoint32","sql":"INSERT INTO \"Conversations\" (\"id\",\"createdBy\",\"createdAt\") VALUES (DEFAULT,$1,$2) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":["","2023-10-03 13:49:59.317 +00:00"]},"sql":"INSERT INTO \"Conversations\" (\"id\",\"createdBy\",\"createdAt\") VALUES (DEFAULT,$1,$2) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":["","2023-10-03 13:49:59.317 +00:00"]}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"SequelizeDatabaseError","parent":{"length":356,"name":"error","severity":"ERROR","code":"23502","detail":"La fila que falla contiene (35, null, https://icons.iconarchive.com/icons/custom-icon-design/silky-lin..., single, null, 2023-10-03 13:50:26.427+00).","schema":"public","table":"Conversations","column":"createdBy","file":"execmain.c","line":"1974","routine":"ExecConstraints","sql":"INSERT INTO \"Conversations\" (\"id\",\"createdAt\") VALUES (DEFAULT,$1) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":["2023-10-03 13:50:26.427 +00:00"]},"original":{"length":356,"name":"error","severity":"ERROR","code":"23502","detail":"La fila que falla contiene (35, null, https://icons.iconarchive.com/icons/custom-icon-design/silky-lin..., single, null, 2023-10-03 13:50:26.427+00).","schema":"public","table":"Conversations","column":"createdBy","file":"execmain.c","line":"1974","routine":"ExecConstraints","sql":"INSERT INTO \"Conversations\" (\"id\",\"createdAt\") VALUES (DEFAULT,$1) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":["2023-10-03 13:50:26.427 +00:00"]},"sql":"INSERT INTO \"Conversations\" (\"id\",\"createdAt\") VALUES (DEFAULT,$1) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":["2023-10-03 13:50:26.427 +00:00"]}
+
+======================ERROR 3/10/2023========================
+{"name":"SequelizeForeignKeyConstraintError","parent":{"length":304,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (createdBy)=(23) no está presente en la tabla «Users».","schema":"public","table":"Conversations","constraint":"Conversations_createdBy_fkey","file":"ri_triggers.c","line":"2607","routine":"ri_ReportViolation","sql":"INSERT INTO \"Conversations\" (\"id\",\"createdBy\",\"createdAt\") VALUES (DEFAULT,$1,$2) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":[23,"2023-10-03 13:53:28.965 +00:00"]},"original":{"length":304,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (createdBy)=(23) no está presente en la tabla «Users».","schema":"public","table":"Conversations","constraint":"Conversations_createdBy_fkey","file":"ri_triggers.c","line":"2607","routine":"ri_ReportViolation","sql":"INSERT INTO \"Conversations\" (\"id\",\"createdBy\",\"createdAt\") VALUES (DEFAULT,$1,$2) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":[23,"2023-10-03 13:53:28.965 +00:00"]},"sql":"INSERT INTO \"Conversations\" (\"id\",\"createdBy\",\"createdAt\") VALUES (DEFAULT,$1,$2) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":[23,"2023-10-03 13:53:28.965 +00:00"],"fields":null}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"SequelizeForeignKeyConstraintError","parent":{"length":305,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (createdBy)=(100) no está presente en la tabla «Users».","schema":"public","table":"Conversations","constraint":"Conversations_createdBy_fkey","file":"ri_triggers.c","line":"2607","routine":"ri_ReportViolation","sql":"INSERT INTO \"Conversations\" (\"id\",\"createdBy\",\"createdAt\") VALUES (DEFAULT,$1,$2) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":[100,"2023-10-03 13:54:50.110 +00:00"]},"original":{"length":305,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (createdBy)=(100) no está presente en la tabla «Users».","schema":"public","table":"Conversations","constraint":"Conversations_createdBy_fkey","file":"ri_triggers.c","line":"2607","routine":"ri_ReportViolation","sql":"INSERT INTO \"Conversations\" (\"id\",\"createdBy\",\"createdAt\") VALUES (DEFAULT,$1,$2) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":[100,"2023-10-03 13:54:50.110 +00:00"]},"sql":"INSERT INTO \"Conversations\" (\"id\",\"createdBy\",\"createdAt\") VALUES (DEFAULT,$1,$2) RETURNING \"id\",\"title\",\"conversationImage\",\"type\",\"createdBy\",\"createdAt\";","parameters":[100,"2023-10-03 13:54:50.110 +00:00"],"fields":null}
+
+======================ERROR 3/10/2023========================
+{"status":400,"error":"User does not exist","message":"You need register before login"}
+
+======================ERROR 3/10/2023========================
+{"status":400,"error":"Invalid data","message":["La propiedad email no debe estar vacia","La propiedad email no tiene formato de corre"]}
+
+======================ERROR 3/10/2023========================
+{"status":400,"error":"User does not exist","message":"You need register before login"}
+
+{"name":"MulterError","message":"File too large","code":"LIMIT_FILE_SIZE","field":"avatar","storageErrors":[]}
+
+======================ERROR 3/10/2023========================
+{"status":400,"error":"File not accepted","message":"Only images files are allowed","storageErrors":[]}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"status":400,"error":"File not accepted","message":"Only images files are allowed","storageErrors":[]}
+
+{"status":401,"message":"No authorization header"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{}
+
+======================ERROR 3/10/2023========================
+{}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 3/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T13:00:56.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T04:55:14.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T12:23:18.000Z"}
+
+======================ERROR 4/10/2023========================
+======================ERROR 4/10/2023========================
+{"status":401,"message":"No authorization header"}
+
+======================ERROR 4/10/2023========================
+{"status":401,"message":"No authorization header"}
+

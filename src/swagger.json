@@ -1,0 +1,581 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "chat_API",
+      "version": "1.0"
+    },
+    "paths": {
+      "/api/v1/users": {
+        "post": {
+          "tags": [
+            "users"
+          ],
+          "summary": "register",
+          "operationId": "register",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/registerrequest"
+                    },
+                    {
+                      "example": {
+                        "firstname": "ian",
+                        "lastname": "rosas",
+                        "email": "ian@hotmail.com",
+                        "password": "Academlo123@"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "firstname": "ian",
+                  "lastname": "rosas",
+                  "email": "ian@hotmail.com",
+                  "password": "Academlo123@"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        },
+        "get": {
+            "security": [
+                {
+                  "bearer": []
+                }
+              ],
+          "tags": [
+            "users"
+          ],
+          "summary": "get all users",
+          "operationId": "getallusers",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/api/v1/users/login": {
+        "post": {
+          "tags": [
+            "users"
+          ],
+          "summary": "login user",
+          "operationId": "loginuser",
+          "parameters": [
+            {
+              "name": "Authorizarion",
+              "in": "header",
+              "description": "",
+              "required": true,
+              "style": "simple",
+              "schema": {
+                "type": "string",
+                "example": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiZmlyc3RuYW1lIjoiYXNkc2QiLCJsYXN0bmFtZSI6InNhZGFzZCIsImVtYWlsIjoiYXJib2xAZ21haWwuY29tIiwiYXZhdGFyIjoiaHR0cHM6Ly9jZG4ucGl4YWJheS5jb20vcGhvdG8vMjAxNS8xMC8wNS8yMi8zNy9ibGFuay1wcm9maWxlLXBpY3R1cmUtOTczNDYwXzEyODAucG5nIiwiZGVzY3JpcHRpb24iOm51bGwsInZhbGlkRW1haWwiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIzLTA5LTE1VDAzOjU2OjE5LjMzMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA5LTE1VDAzOjU2OjE5LjMzMFoiLCJpYXQiOjE2OTQ4MzExODcsImV4cCI6MTY5NDgzNDc4N30.MvnBHAu54f2kQ9EL01utmazVqQ61o0y8Iyym7PB6nKisacDvQHwBT2uBbRQXDNRDrov4XuUHCsEg08rdE3uPUA"
+              }
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/loginuserrequest"
+                    },
+                    {
+                      "example": {
+                        "email": "alexsisamalfi@hotmail.com",
+                        "password": "Academlo123@"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "email": "alexsisamalfi@hotmail.com",
+                  "password": "Academlo123@"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+          
+        }
+      },
+      "/reverify-email": {
+        "post": {
+          "tags": [
+            "users"
+          ],
+          "summary": "reverify email",
+          "operationId": "reverifyemail",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/reverifyemailrequest"
+                    },
+                    {
+                      "example": {
+                        "email": "alexisamalfi@hotmail.com",
+                        "firstname": "Alexis",
+                        "lastname": "Arango"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "email": "alexisamalfi@hotmail.com",
+                  "firstname": "Alexis",
+                  "lastname": "Arango"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/api/v1/conversations": {
+        "post": {
+          "tags": [
+            "conversations"
+          ],
+          "summary": "create conversation",
+          "operationId": "createconversation",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/createconversationrequest"
+                    },
+                    {
+                      "example": {
+                        "userId": 100,
+                        "participantId": 2
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "userId": 100,
+                  "participantId": 2
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/api/v1/conversations/group": {
+        "post": {
+          "tags": [
+            "conversations"
+          ],
+          "summary": "create group conversation",
+          "operationId": "creategroupconversation",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/creategroupconversationrequest"
+                    },
+                    {
+                      "example": {
+                        "userId": 2,
+                        "participantsIds": [
+                          1,
+                          4,
+                          5
+                        ],
+                        "title": "Pikachu"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "userId": 2,
+                  "participantsIds": [
+                    1,
+                    4,
+                    5
+                  ],
+                  "title": "Pikachu"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/api/v1/conversations/{id}": {
+        "get": {
+            "security": [
+                {
+                  "bearer": []
+                }
+              ],
+          "tags": [
+            "conversations"
+          ],
+          "summary": "get all conversations by id",
+          "operationId": "getallconversationsbyid",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "",
+              "required": true,
+              "style": "simple",
+              "schema": {
+                "type": "integer",
+                "format": "int32",
+                "example": 4
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/api/v1/messages/conversation/{id}": {
+        "post": {
+          "tags": [
+            "messages"
+          ],
+          "summary": "crear message",
+          "operationId": "crearmessage",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "",
+              "required": true,
+              "style": "simple",
+              "schema": {
+                "type": "integer",
+                "format": "int32",
+                "example": 30
+              }
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/crearmessagerequest"
+                    },
+                    {
+                      "example": {
+                        "content": "Que te importa",
+                        "senderId": 1
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "content": "Que te importa",
+                  "senderId": 1
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "get": {
+          "tags": [
+            "messages"
+          ],
+          "summary": "get conversation messages",
+          "operationId": "getconversationmessages",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "",
+              "required": true,
+              "style": "simple",
+              "schema": {
+                "type": "integer",
+                "format": "int32",
+                "example": 30
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "registerrequest": {
+          "title": "registerrequest",
+          "required": [
+            "firstname",
+            "lastname",
+            "email",
+            "password"
+          ],
+          "type": "object",
+          "properties": {
+            "firstname": {
+              "type": "string"
+            },
+            "lastname": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "firstname": "ian",
+            "lastname": "rosas",
+            "email": "ian@hotmail.com",
+            "password": "Academlo123@"
+          }
+        },
+        "loginuserrequest": {
+          "title": "loginuserrequest",
+          "required": [
+            "email",
+            "password"
+          ],
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "email": "alexsisamalfi@hotmail.com",
+            "password": "Academlo123@"
+          }
+        },
+        "reverifyemailrequest": {
+          "title": "reverifyemailrequest",
+          "required": [
+            "email",
+            "firstname",
+            "lastname"
+          ],
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "firstname": {
+              "type": "string"
+            },
+            "lastname": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "email": "alexisamalfi@hotmail.com",
+            "firstname": "Alexis",
+            "lastname": "Arango"
+          }
+        },
+        "createconversationrequest": {
+          "title": "createconversationrequest",
+          "required": [
+            "userId",
+            "participantId"
+          ],
+          "type": "object",
+          "properties": {
+            "userId": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "participantId": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "example": {
+            "userId": 100,
+            "participantId": 2
+          }
+        },
+        "creategroupconversationrequest": {
+          "title": "creategroupconversationrequest",
+          "required": [
+            "userId",
+            "participantsIds",
+            "title"
+          ],
+          "type": "object",
+          "properties": {
+            "userId": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "participantsIds": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "description": ""
+            },
+            "title": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "userId": 2,
+            "participantsIds": [
+              1,
+              4,
+              5
+            ],
+            "title": "Pikachu"
+          }
+        },
+        "crearmessagerequest": {
+          "title": "crearmessagerequest",
+          "required": [
+            "content",
+            "senderId"
+          ],
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string"
+            },
+            "senderId": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "example": {
+            "content": "Que te importa",
+            "senderId": 1
+          }
+        }
+      },
+      "securitySchemes": {
+        "bearer": {
+          "type": "http",
+          "scheme": "bearer"
+        }
+      }
+    },
+    "security": [],
+    "tags": [
+      {
+        "name": "users"
+      },
+      {
+        "name": "conversations"
+      },
+      {
+        "name": "messages"
+      }
+    ]
+  }
