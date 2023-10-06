@@ -1,7 +1,7 @@
 const {User} = require('../../models')
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const sendWelcomeEmail = require('../../helpers/sendMAil');
+const sendWelcomeEmail = require('../../helpers/sendMail');
 const { json } = require('sequelize');
 require("dotenv").config();
 

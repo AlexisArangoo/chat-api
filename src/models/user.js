@@ -6,7 +6,7 @@ const {
   Model
 } = require('sequelize');
 const { options } = require('../modules/user/user.routes');
-const sendWelcomeEmail = require('../helpers/sendMAil');
+const sendWelcomeEmail = require('../helpers/sendMail');
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
