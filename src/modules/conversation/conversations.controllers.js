@@ -1,5 +1,4 @@
-const {Conversation, User, Participant} = require('../../models')
-const conversation = require('../../models/conversation')
+const {Conversation, User, Participant, Message} = require('../../models')
 
 
 const createConversation = async (req, res, next) => {
@@ -57,8 +56,23 @@ const getAllConversations = async (req, res, next) => {
         next(error)
     }
 }
+
+const deleteConversation = async (req, res, next) => {
+    try {
+      const { id } = req.params;
+      await Message.destroy({ where: { conversationId: id } });
+      await Participant.destroy({ where: { ConversationId: id } });
+      await Conversation.destroy({ where: { id } });
+      res.status(204).end();
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
+
 module.exports = {
     createConversation,
     createGroupConversation,
-    getAllConversations
+    getAllConversations, 
+    deleteConversation
 }

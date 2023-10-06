@@ -462,3 +462,12 @@
 ======================ERROR 4/10/2023========================
 {"status":401,"message":"No authorization header"}
 
+======================ERROR 6/10/2023========================
+{"status":401,"error":"Email verification needed","message":"Look at your email messages for a verification email"}
+
+======================ERROR 6/10/2023========================
+{"status":401,"message":"No authorization header"}
+
+======================ERROR 6/10/2023========================
+{}
+
