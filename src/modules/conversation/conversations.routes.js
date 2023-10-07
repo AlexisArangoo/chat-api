@@ -10,7 +10,7 @@ router.post('/group', authenticate, createGroupConversation)
 
 router.route('/:id')
     .get( authenticate, getAllConversations)
-    .delete( deleteConversation)
+    .delete(authenticate, deleteConversation)
 
 
 module.exports = router
